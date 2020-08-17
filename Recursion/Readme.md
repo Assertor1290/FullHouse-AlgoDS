@@ -129,4 +129,71 @@ class GFG {
 When printFun(3) is called from main(), memory is allocated to printFun(3) and a local variable test is initialized to 3 and statement 1 to 4 are pushed on the stack as shown in below diagram. It first prints ‘3’. In statement 2, printFun(2) is called and memory is allocated to printFun(2) and a local variable test is initialized to 2 and statement 1 to 4 are pushed in the stack. Similarly, printFun(2) calls printFun(1) and printFun(1) calls printFun(0). printFun(0) goes to if statement and it return to printFun(1). Remaining statements of printFun(1) are executed and it returns to printFun(2) and so on. In the output, value from 3 to 1 are printed and then 1 to 3 are printed. The memory stack has been shown in below diagram.  
 <pre>
 <img src="https://user-images.githubusercontent.com/30290570/90332978-4960c080-dfdf-11ea-9187-9dc784bac383.jpg">
+</pre>  
+
+Recursion Tree Stepwise(for Fibonacci)  
+
+<pre>
+public static int fib(n){
+    if(n==0) return 0;
+    if(n==1) return 1;
+    return fib(n-1) + fib(n-2);
+}
+Step 1: First we encountered fib(n-1). So call the function again for fib(n-1) leaving fib(n-2) as it is for now.
+        We keeop doing this till fib(n-1) reach the base case.
+
+                                      Fib(4)
+                                    / 
+                                   /
+                                Fib(3)
+                                /
+                               /
+                            Fib(2)
+                            /
+                           /
+                         Fib(1)
+
+Step 2: Now, on hitting the base case, fib(1) returns 1.
+        
+                                      Fib(4)
+                                    / 
+                                   /
+                                Fib(3)
+                                /
+                               /
+                            Fib(2)
+                       1  > /
+                        (  /
+                         Fib(1)
+Step 3: Now, when fib(1) was called, we had the statement: return fib(1) + fib(0)  //for n=2
+        Now we have got fib(1). So we do recursive call now for fib(0).
+                
+                                      Fib(4)
+                                    / 
+                                   /
+                                Fib(3)
+                            2 > /
+                             ( /
+                            Fib(2)
+                       1  > /   \ <  1
+                        (  /     \ )
+                         Fib(1)  Fib(0)
+        And similar to fib(1), fib(0) also hits base case and return 1.
+        So, fib(2) now returns fib(1)+fib(0) =1+1=2.
+
+Step 4: Now, for fib(3) we had return fib(2)[//n-1 case] +fib(1)[//n-2 case.]
+        We got the value for fib(2). So now recursion starts for fib(1)
+                        
+                                      Fib(4)
+                                    / 
+                                   /
+                                Fib(3)
+                            2 > /  \
+                             ( /    \
+                            Fib(2)  Fib(1)
+                            /   \   
+                           /     \ 
+                         Fib(1)  Fib(0)
+and so on...
 </pre>
+
