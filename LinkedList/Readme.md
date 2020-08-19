@@ -141,3 +141,19 @@ To delete a node from linked list, we need to do following steps:-
 2) Change the next of previous node.
 3) Free memory for the node to be deleted.  
 <img src="https://user-images.githubusercontent.com/30290570/90621260-19a8f700-e231-11ea-93bd-c5df0bb88bd5.png">
+
+**Linked List Reverse**
+<pre>
+                                                     Initial
+                                        <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631596-a8714000-e240-11ea-99e9-e1213dd9c9a7.png">
+                1                                        2                                      3
+<img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631608-ac04c700-e240-11ea-894e-51f3f5687a7f.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631612-af984e00-e240-11ea-8d04-499903425f76.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631617-b1faa800-e240-11ea-8d9c-8692f1f4524d.png">
+                4                                        5                                      6
+<img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631624-b3c46b80-e240-11ea-962f-d6fe9e339fbd.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631639-b757f280-e240-11ea-9fad-be8087fe59b9.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631650-ba52e300-e240-11ea-8fde-ad11dc14bb9b.png">
+                7                                        8                                      9
+<img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631655-bd4dd380-e240-11ea-8dde-80ea755eb361.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631661-bfb02d80-e240-11ea-8e00-0bb1dd7dcdfb.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631667-c2128780-e240-11ea-9255-a4d8029b4ab8.png">
+                10                                       11                                     12
+<img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631675-c50d7800-e240-11ea-92f3-ba4cad9f7d88.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631678-c6d73b80-e240-11ea-9403-fe8d6ffc0dff.png">       <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631685-c9d22c00-e240-11ea-9c1f-750700dd51f7.png">
+                                                        13
+                                        <img height="250px" width="250px" src="https://user-images.githubusercontent.com/30290570/90631696-cd65b300-e240-11ea-8325-bd3a67205776.png">
+</pre>
