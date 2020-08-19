@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * <p>Class to show linked list deletion</p>
+ * <p>Delete a given key</p>
  */
 public class LinkedListDeletion {
     Node head;
