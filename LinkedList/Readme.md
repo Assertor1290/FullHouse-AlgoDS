@@ -135,3 +135,9 @@ class LinkedList {
   3. At the end of the linked list.  
 <img src="https://user-images.githubusercontent.com/30290570/90606598-a8137d80-e21d-11ea-8e19-868f060199dd.png">
 
+**Linked List Deletion**  
+To delete a node from linked list, we need to do following steps:-
+1) Find previous node of the node to be deleted.
+2) Change the next of previous node.
+3) Free memory for the node to be deleted.  
+<img src="https://user-images.githubusercontent.com/30290570/90621260-19a8f700-e231-11ea-93bd-c5df0bb88bd5.png">
