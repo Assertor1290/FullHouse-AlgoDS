@@ -126,4 +126,12 @@ class LinkedList {
 3) In general, array is considered a data structure for which size is fixed at the compile time and array memory is allocated either from Data section (e.g. global array) or Stack section (e.g. local array). Linked list is considered a data structure for which size is not fixed and memory is allocated from Heap section (e.g. using malloc() etc.) as and when needed. 
 4) Array is taken as a static data structure (residing in Data or Stack section) while linked list is taken as a dynamic data structure (residing in Heap section).  
 
-  
+**Linked List Insertion**  
+ A node can be added in three ways:-
+1. At the front of the linked list.  
+<img src="https://user-images.githubusercontent.com/30290570/90606578-a21d9c80-e21d-11ea-8826-ca75a08b9f98.png">
+  2. After a given node.  
+<img src="https://user-images.githubusercontent.com/30290570/90606587-a47ff680-e21d-11ea-902f-42fa658e0c15.png">
+  3. At the end of the linked list.  
+<img src="https://user-images.githubusercontent.com/30290570/90606598-a8137d80-e21d-11ea-8e19-868f060199dd.png">
+
