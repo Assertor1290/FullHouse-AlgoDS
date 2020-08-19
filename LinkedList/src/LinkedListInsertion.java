@@ -18,8 +18,11 @@ public class LinkedListInsertion {
         System.out.println();
     }
     public void insertBeginning(int val){
+        // 1 & 2: Allocate the Node & Put in the data
         Node first=new Node(val);
+        // 3. Make next of new Node as head
         first.next = head;
+        // 4. Move the head to point to new Node
         head = first;
     }
     public void insertAfterNode(int after,int val){
@@ -33,6 +36,11 @@ public class LinkedListInsertion {
         ins.next=mid;
     }
     public void insertLast(int val){
+        if (head == null)
+        {
+            head = new Node(val);
+            return;
+        }
         Node n=head;
         while(n.next!=null){
             n=n.next;
