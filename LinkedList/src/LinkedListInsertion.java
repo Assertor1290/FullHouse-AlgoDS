@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * <p>Class to show Linked List insertion</p>
+ */
 public class LinkedListInsertion {
     Node head;
     static class Node{
