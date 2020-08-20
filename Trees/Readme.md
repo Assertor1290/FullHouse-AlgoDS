@@ -4,6 +4,9 @@ Tree is a hierarchial data structure.
   
 **Tree Vocabulary**  
 The topmost node is called root of the tree. The elements that are directly under an element are called its children. The element directly above something is called its parent.  Elements with no children are called leaves.  
+* Height = from bottom to top
+* Depth = from top to bottom
+* Level = depth+1
   
 **Why Trees?**  
 1. One reason to use trees might be because you want to store information that naturally forms a hierarchy. For example, the file system on a computer.
@@ -20,8 +23,17 @@ A Tree node contains following parts.
 3. Pointer to right child
 
 **Properties of Binary Tree**  
-1) The maximum number of nodes at level ‘l’ of a binary tree is 2^l.
-Here level is number of nodes on path from root to the node (including root and node). Level of root is 0.
-Since in Binary tree every node has at most 2 children, next level would have twice nodes, i.e. 2 * 2l.  
+1) The maximum number of nodes at level ‘l’ of a binary tree is 2^(l-1).
+Here level is number of nodes on path from root to the node (including root and node). Level of root is 1.
   
-  
+ <pre>
+                                   o(depth=0, height=3, lev=1)
+                                 /   \
+      (depth=1, height=2, lev=2)o     o(depth=1, height=1, lev=2)
+                               /     / \
+    (depth=2, height=1, lev=3)o     o   o(depth=2, height=0, lev=3)
+                             /  
+  (depth=3, height=0, lev=4)o
+</pre>  
+
+2) 
