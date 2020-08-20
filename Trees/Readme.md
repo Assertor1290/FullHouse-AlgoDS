@@ -36,4 +36,16 @@ Here level is number of nodes on path from root to the node (including root and 
   (depth=3, height=0, lev=4)o
 </pre>  
 
-2) 
+2) A complete binary tree can have 2^h minimum number nodes or 2^(h+1)-1 maximum number of nodes.
+<pre>
+                <img height="250" width="250" src="https://user-images.githubusercontent.com/30290570/90715906-32fd8200-e2c9-11ea-9876-426d348153e2.png">                 <img height="250" width="250" src="https://user-images.githubusercontent.com/30290570/90715900-30029180-e2c9-11ea-9b19-6443b3f97e55.png">
+</pre>
+  
+3) In a Binary Tree with N nodes, minimum possible height is Log2(N+1)-1.  
+  
+4) In Binary tree where every node has 0 or 2 children, number of leaf nodes is always one more than nodes with two children.
+<pre>
+   L = T + 1
+Where L = Number of leaf nodes
+      T = Number of internal nodes with two children  
+</pre>
