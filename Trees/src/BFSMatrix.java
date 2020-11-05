@@ -40,7 +40,7 @@ public class BFSMatrix {
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(System.in));
-        int vertices,edges;
+        int vertices;
         System.out.println("Enter number of vertices ");
         vertices=Integer.parseInt(bufferedReader.readLine());
         BFSMatrix bfsMatrix=new BFSMatrix(vertices);
