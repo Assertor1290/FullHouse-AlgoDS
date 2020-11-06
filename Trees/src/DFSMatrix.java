@@ -46,15 +46,15 @@ public class DFSMatrix {
     }
     public static void main(String[] args) {
         DFSMatrix dfsMatrix=new DFSMatrix(8);
-        dfsMatrix.addEdge(0,1);
-        dfsMatrix.addEdge(0,2);
-        dfsMatrix.addEdge(0,3);
-        dfsMatrix.addEdge(1,4);
-        dfsMatrix.addEdge(1,5);
-        dfsMatrix.addEdge(4,7);
-        dfsMatrix.addEdge(2,6);
-        dfsMatrix.DFSRecursive(0);
+        dfsMatrix.addEdge(4,3);
+        dfsMatrix.addEdge(4,5);
+        dfsMatrix.addEdge(4,6);
+        dfsMatrix.addEdge(3,2);
+        dfsMatrix.addEdge(3,0);
+        dfsMatrix.addEdge(2,1);
+        dfsMatrix.addEdge(5,7);
+        dfsMatrix.DFSRecursive(4);
         System.out.println();
-        dfsMatrix.DFSIterative(0);
+        dfsMatrix.DFSIterative(4);
     }
 }
