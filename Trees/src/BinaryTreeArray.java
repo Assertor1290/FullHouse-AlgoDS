@@ -1,5 +1,4 @@
 class ArrayRep{
-    int root=0;
     //Array to represent Binary Tree
     String[] array=new String[10];
 
